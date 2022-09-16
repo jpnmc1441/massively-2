@@ -1,29 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -3234,7 +3212,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpeg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3409,7 +3387,7 @@ input, select, textarea {
 				opacity: 0;
 				visibility: hidden;
 			}
-
+/*
 		#intro.hidden {
 			pointer-events: none;
 			-moz-transform: translateY(2rem);
@@ -3423,8 +3401,8 @@ input, select, textarea {
 			opacity: 0;
 			visibility: hidden;
 		}
-
-			#intro.hidden + #header .logo {
+*/
+		/*	#intro.hidden + #header .logo {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
@@ -3432,7 +3410,8 @@ input, select, textarea {
 				opacity: 1;
 				visibility: visible;
 			}
-
+			*/
+/*
 		body.is-preload #intro {
 			-moz-transform: translateY(2rem);
 			-webkit-transform: translateY(2rem);
@@ -3489,8 +3468,8 @@ input, select, textarea {
 				}
 
 		}
-
-/* Header */
+*/
+ /* Header 
 
 	#header {
 		color: #ffffff;
@@ -3601,7 +3580,7 @@ input, select, textarea {
 					border-width: 3px !important;
 				}
 
-		}
+		}*/
 
 /* Nav */
 
