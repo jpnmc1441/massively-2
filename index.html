@@ -34,11 +34,118 @@ body, html {
   color: black;
   display: none;
   padding: 100px 20px;
-  height: 100%;
+  min-height:1000px;
 }
 
+.Bottom-Section {
+  margin: auto;
+  width: 50%;
+  align-items: center;
+}
+
+#userPhoto {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 45px auto 30px;
+  border-radius: 50%;
+  border: solid #e6e6e6 2px;
+  box-shadow: 0px 7px 15px rgba(20, 20, 20, 0.5);
+}
+#userPhoto:hover {
+  width: 200px;
+  height: 200px;
+}
+
+#userName {
+  color: #fff;
+  font-size: 25px;
+  display: block;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+#links {
+  max-width: 600px;
+  width: auto;
+  margin: 25px auto;
+  display: flex column;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.link {
+  display: block;
+  background-color: #e6e6e6;
+  color: #1c1c1c;
+  font-family: inherit;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 20px;
+  border: solid #e6e6e6 2px;
+  box-shadow: 0px 7px 15px rgba(20, 20, 20, 0.5);
+}
+
+.link:hover {
+  background-color: #1c1c1c;
+  color: #e6e6e6;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  margin: auto;
+  width: 60%;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  font-size: 30px;
+  color: #bbb;
+  opacity: 0.6;
+  height: 30px;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: black;
+  opacity: 1.6;
+}
+
+p {
+  text-align: center;
+  color: #bbb;
+}
+
+/*This Glowing Hover Effect was made by qpi65 , i used it to Highlight my name */
+h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+h1 span {
+  transition: 0.5s linear;
+}
+
+h1:hover span {
+  color: wheat;
+  text-shadow: 0 0 10px #fff, 0 0 20px black, 0 0 40px whitesmoke;
+}
+
+/*This Glowing Hover Effect was made by qpi65 , i used it to Highlight my name */
+
 #Home {background-color: #b6d6c8;}
-#News {background-color: #e86357;}
+#Social {background-color: #e86357;}
 #Contact {background-color: #e7dfcf;}
 #About {background-color: #e9bf8b;}
 </style>
@@ -46,7 +153,7 @@ body, html {
 <body>
 
 <button class="tablink" onclick="openPage('Home', this, '#b6d6c8')">Home</button>
-<button class="tablink" onclick="openPage('News', this, '#e86357')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Social', this, '#e86357')" id="defaultOpen">Social</button>
 <button class="tablink" onclick="openPage('Contact', this, '#e7dfcf')">Contact</button>
 <button class="tablink" onclick="openPage('About', this, '#e9bf8b')">About</button>
 
@@ -55,9 +162,24 @@ body, html {
   <p>Home is where the heart is..</p>
 </div>
 
-<div id="News" class="tabcontent">
-  <h3>News</h3>
-  <p>Some news this fine day!</p> 
+<div id="Social" class="tabcontent">
+  <h3>Social</h3>
+  <p>Links To Social Media</p> 
+  
+  <img id="userPhoto" src="https://avatars.githubusercontent.com/u/57337800?v=4" alt="User Photo">
+<a class="icon" href="https://codepen.io/Memet_" id="userName" target="_blank">
+  <h1><span>Zxce3</span></h1>
+</a>
+<div id="links">
+  <a class="link" href="https://seircoin.creator-spring.com/" target="_blank"><i class="fa fa-github" style="padding:10px"></i>STORE</a>
+  <a class="link" href="https://www.youtube.com/channel/UCYcfCbtFonPUPoiqjQoS-lg" target="_blank"><i class="fa fa-reddit" style="padding:10px"></i> YOUTUBE</a>
+  <a class="link" href="https://www.youtube.com/channel/UCRc53opg_iSKwM1TkZbqw_w" target="_blank"><i class="fa fa-linkedin-square" style="padding:10px"></i>YOUTUBE: MODELHUB</a>
+  <a class="link" href="https://twitter.com/zxce3_" target="_blank"><i class="fa fa-twitter-square" style="padding:10px"></i> INSTAGRAM:SEIRCOIN</a>
+  <a class="link" href="https://www.instagram.com/mettzx/" target="_blank"><i class="fa fa-instagram" style="padding:10px"></i>TIKTOK:SEIRCOIN</a>
+</div>
+<div class="Bottom-Section">
+  <p style="color:wheat">Thanks</p>
+</div>
 </div>
 
 <div id="Contact" class="tabcontent">
@@ -91,3 +213,5 @@ document.getElementById("defaultOpen").click();
    
 </body>
 </html> 
+
+
