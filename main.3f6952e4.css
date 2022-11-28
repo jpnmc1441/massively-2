@@ -83,3 +83,9 @@ color: white;
 }
 /*# sourceMappingURL=main.70a66962.map*/
 
+.navbar-nav>li>a {
+text-align:center;
+}
+.navbar-nav{
+float:right;
+}
