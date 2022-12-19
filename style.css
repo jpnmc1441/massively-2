@@ -93,7 +93,7 @@ h1 span {
 }*/
 
 main {
- border:1px solid lime;
+/* border:1px solid lime;*/
   background: rgba(0,0,0,0.5);
   color:white;
   position: relative;
@@ -190,7 +190,7 @@ border:1px solid yellow;
 /*----------------------Sweet stuff title -------------------------------------------------*/
  .linktree{
    background-color:rgba(220,220,220,0.1);
-  border:1px solid red;
+ /* border:1px solid red;*/
    max-width: 500px;
   margin: auto;
   padding: 1rem;
