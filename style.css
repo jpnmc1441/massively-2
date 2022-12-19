@@ -188,21 +188,23 @@ background:url('https://s9.gifyu.com/images/goku.gif');
 }
 /*----------------------Sweet stuff title -------------------------------------------------*/
  .linktree{
-  /* border:1px solid lime;*/
+  border:1px solid lime;
    max-width: 800px;
   margin: auto;
   padding: 1rem;
   align-items: center;
    justify-content: center;}
+
 .title-wrapper {
   display: grid;
   align-items: center;
   justify-content: center;
   transform: skew(0, -10deg);
-/*border:1px solid lime;*/
+border:1px solid lime;
 }
+
 .sweet, .stuff{
- /* border:1px solid red;*/
+ border:1px solid red;
    width:100%;
   display:block;
 }
