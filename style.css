@@ -88,7 +88,7 @@ h1 span {
 }
 
 main {
- /* border:1px solid lime;*/
+ border:1px solid pink;
   background: rgba(0,0,0,0.5);
   color:white;
   position: relative;
@@ -259,7 +259,7 @@ a{
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-  width:20rem;
+  width:80%;
   text-align:center;  
 }
 a:hover{
