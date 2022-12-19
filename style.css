@@ -210,12 +210,14 @@ background:url('https://s9.gifyu.com/images/goku.gif');
 .sweet, .stuff{
  /* border:1px solid red;*/
    width:100%;
+   font-family: 'Exo 2', sans-serif;
   display:block;
 }
 
 .sweet{margin-top:60px;}
 
 .sweet-title {
+   
  color: #fde9ff;
   font-weight: 900;
   text-transform: uppercase;
