@@ -28,98 +28,106 @@
     background-position: 200% center;
   }
 }}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-	--primary-color: #3a4052;
+
+.video-header {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+.video-header, .video-header video, .video-header .viewport-header {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video-header video {
+  background: brown;
+  object-fit: cover;
+}
+.video-header .viewport-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 150%;
+  line-height: 1.4;
+}
 
 body {
-font-family: 'Exo 2', sans-serif;
-line-height: 1.5;
-background-color:black;
-color:white;
+  margin: 0;
 }
 
-
-
-
-.showcase {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: #fff;
-	padding: 0 20px;
+h1 {
+  font-family: "Syncopate", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 3vw;
+  text-align: center;
+}
+h1 span {
+  display: block;
+  font-size: 10vw;
+  letter-spacing: -0.6rem;
 }
 
-.showcase2{
-  height:auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: #fff;
-	padding: 0 20px;
-}
+main {
+ /* border:1px solid lime;*/
+  background: rgba(0,0,0,0.5);
+  color:white;
+  position: relative;
+  padding: 1rem;
+  /*margin-top: 100vh;*/
+  margin:auto;
 
-.video-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
 }
-
-.video-container video {
-	min-width: 100%;
-	min-height: 100%;
+main::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	object-fit: cover;
+  top: 0;
+  left: 0;
+  top: -100vh;
+}
+main p {
+  max-width: 600px;
+  margin: 1rem auto;
 }
 
-.video-container:after {
-	content: '';
-	z-index: 1;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: absolute;
-}
-
-.content {
-	z-index: 2;
-}
-
-
-
-
+/*-----------------------------------------------------------------------------*/
 .menubtn{
-  color:#a3ecf0;
+  color:#97ecf0;
 position:absolute;
+  z-index:5;
 top:20px;
 left:20px;}
 
 
 .sidenav {
-background:url('https://s9.gifyu.com/images/022db77ebd0b22cf17d.gif');
+background:url('https://s9.gifyu.com/images/goku.gif');
     background-size:cover;
-  background-color:rgba(10,52,23,0.5);
+  background-color:rgba(1,2,2,0.9);
   height: 100vh;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 6;
   top: 0;
   left: 0;
   overflow-x: hidden;
@@ -138,30 +146,34 @@ background:url('https://s9.gifyu.com/images/022db77ebd0b22cf17d.gif');
   background-size: cover;
   height:100vh;
 }
-.sidenav {
-  position: absolute;
-  top: 0;
-  right: 15px;
-  font-size: 26px;
- /* border:1px solid yellow;*/
-}
+
+
+
+
 
 .sidenav a {
-  padding: 28px 8px;
+  padding: 28px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: white;
   display: block;
   transition: 0.3s;
+
 }
 
 .sidenav a:hover{
   color: #f1f1f1;
 }
 
-
+.sidenav {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 26px;
+  /*border:1px solid yellow;*/
+}
 .closebtn{
-  color:aqua;
+  color:#97ecf0;
   /*border:1px dashed lime;*/
   position:absolute;
   top:10px;
@@ -174,16 +186,14 @@ background:url('https://s9.gifyu.com/images/022db77ebd0b22cf17d.gif');
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
-
-.header {
-  max-width: 1200px;
+/*----------------------Sweet stuff title -------------------------------------------------*/
+ .linktree{
+  /* border:1px solid lime;*/
+   max-width: 800px;
   margin: auto;
   padding: 1rem;
   align-items: center;
-  justify-content: center;
-}
-
+   justify-content: center;}
 .title-wrapper {
   display: grid;
   align-items: center;
@@ -233,16 +243,11 @@ background:url('https://s9.gifyu.com/images/022db77ebd0b22cf17d.gif');
     }
   }
 }
+/*-------------------- a buttons ----------------------*/
 
 
-
-
-
-
-/*---------------------a css and on a hover -------------------------------------------*/
-
-a
-    {position: relative;
+a{
+    position: relative;
     display: block;
     padding:20px;
     margin: 60px auto 0px;
@@ -253,9 +258,8 @@ a
     letter-spacing: 4px;
     overflow: hidden;
   width:20rem;
-  text-align:center;
+  text-align:center;  
 }
-
 a:hover{
     background: #03e9f4;
     color: #050801;
