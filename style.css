@@ -118,9 +118,10 @@ main p {
 
 /*-----------------------------------------------------------------------------*/
 .menubtn{
-  color:#97ecf0;
+color:#97ecf0;
 position:sticky;
-  z-index:5;
+position: -webkit-sticky;
+z-index:5;
 top:10px;
 left:10px;}
 
