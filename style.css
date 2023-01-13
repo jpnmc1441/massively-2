@@ -250,10 +250,11 @@ a{
   width:80%;
   text-align:center;  
    max-width:500px;
+box-shadow: 10px 10px 25px 0px black;
 }
 
 a:hover{
-    background: #03e9f4;
+    
     color: #050801;
     box-shadow: 0 0 5px #03e9f4,
                 0 0 25px #03e9f4,
