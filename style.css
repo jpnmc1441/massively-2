@@ -1,34 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+
+
 .fa-face-grin-tongue-squint{font-size:1.5rem;font-weight:bolder;}
-
-
-.fa-brands {
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
+.fa-brands{font-weight:400;font-size:2rem;}
+.fa-instagram{ 
+ font-size: 2rem;
+  background: -webkit-linear-gradient(#ED008C,
+#FFF000);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-   font-size:2rem;
-  
+  -webkit-text-fill-color: transparent;}
+
+.fa-tiktok{ 
+ font-size: 2rem;
+  background: -webkit-linear-gradient(#2C3E50,
+#8B939A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
+
+.fa-youtube{ 
+ font-size: 2rem;
+  background: -webkit-linear-gradient(#B02E0C,
+#EB4511);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
+
+
+
+.intro01{
+ font-family: 'Tangerine', cursive;
+    font-size: 2rem;
+    position: relative;
+    display: block;
+    padding: 20px;
+    margin: 60px auto 0px;
+    color: rgb(189 225 255);
+    /*letter-spacing: 4px;*/
+    width: 80%;
+    text-align: center;
+    max-width: 500px;
+    backdrop-filter: blur(7px);
+    box-shadow: 1px 5px 23px 0px rgb(0 0 0 / 90%);
+    background-color: rgba(0,0,0,0.5);
 }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}}
+
+.viewmorebutton{
+   font-family: 'Rampart One', cursive;
+    border: 1px solid green;
+    border-radius: 62px;
+    margin: auto;
+margin-top:10px;
+Font-size:1.5rem;
+    padding: 10px;
+    width: 80%;
+    background: rgb(60, 179, 113);
+    color: darkblue;}
 
 
 *{
@@ -139,25 +169,28 @@ h1 span {
 
 /*------------------------------div on top of gif css-----------------------------------------------*/
 .h1social{
-  margin:40px auto 0px;
-  width:fit-content;
-  color:lime;}
+ font-family: 'Rampart One';
+    margin: 40px auto 0px;
+    width: fit-content;
+    color: lime;}
 
 .sitedesc{color:white;
 margin:auto;width:fit-content;}
 
 .image{
-  font-family: "Exo 2", sans-serif;
-   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(https://i.pinimg.com/originals/68/47/d4/6847d4e3179d492672fad8b33a2efee7.gif);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-y: auto; 
-  width:100%;
+background-color: rgba(0,0,0,0.8);
+    font-family: "Exo 2", sans-serif;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(https://i.pinimg.com/originals/68/47/d4/6847d4e3179d492672fad8b33a2efee7.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    width: 100%;
+    background-blend-mode: overlay;
 }
 
 /*----------------------Sweet stuff title -------------------------------------------------*/
@@ -237,30 +270,30 @@ margin:auto;width:fit-content;}
 
 
 a{
-    position: relative;
+ font-family: 'Ruslan Display', cursive;
+   position: relative;
     display: block;
-    padding:20px;
+    padding: 20px;
     margin: 60px auto 0px;
-    color: #fde9ff;
+    color: rgb(233, 116, 81);
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-  width:80%;
-  text-align:center;  
-   max-width:500px;
-box-shadow: 10px 10px 25px 0px black;
+    width: 80%;
+    text-align: center;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 5px 23px 0px rgb(8 1 1 / 40%);
+    background-color: rgba(0,0,0,0.3);
 }
 
 a:hover{
     
-    color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+       color: rgb(255, 172, 28);
+    box-shadow: 1px 5px 23px 0px rgb(8 11 1 / 89%);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 /*a:nth-child(1){
     filter: hue-rotate(270deg);
@@ -277,7 +310,7 @@ a span:nth-child(1){
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg,transparent,#03e9f4);
+    background: linear-gradient(90deg,transparent,rgba(255, 68, 51,0.2));
     animation: animate1 1s linear infinite;
 }
 @keyframes animate1{
@@ -293,7 +326,7 @@ a span:nth-child(2){
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg,transparent,#03e9f4);
+    background: linear-gradient(180deg,transparent,rgba(255, 68, 51,0.2));
     animation: animate2 1s linear infinite;
     animation-delay: 0.25s;
 }
@@ -310,7 +343,7 @@ a span:nth-child(3){
     right: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg,transparent,#03e9f4);
+    background: linear-gradient(270deg,transparent,rgba(255, 68, 51,0.2));
     animation: animate3 1s linear infinite;
     animation-delay: 0.50s;
 }
@@ -329,7 +362,7 @@ a span:nth-child(4){
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg,transparent,#03e9f4);
+    background: linear-gradient(360deg,transparent,rgba(255, 68, 51,0.2));
     animation: animate4 1s linear infinite;
     animation-delay: 0.75s;
 }
@@ -341,4 +374,3 @@ a span:nth-child(4){
         bottom: 100%;
     }
 }
-
